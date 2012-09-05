@@ -14,5 +14,5 @@ int main() {
       sum += i;
     }
   }
-  cout << "The sum of the first 1000 integers is::" << sum << endl;
+  cout << "The sum of the first 1000 integers (which are also divisible by 3 or 5) is::" << sum << endl;
 }
