@@ -10,7 +10,9 @@ using std::endl;
 int main() {
   int sum = 0;
   for(int i = 0; i<1000; ++i) {
-    sum += i;
+    if(i % 5 == 0 || i % 3 == 0) {
+      sum += i;
+    }
   }
   cout << "The sum of the first 1000 integers is::" << sum << endl;
 }
