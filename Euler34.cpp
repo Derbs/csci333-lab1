@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 using std::cout;
 using std::endl;
@@ -12,11 +13,13 @@ using std::endl;
 //MUST be greater than the original number.  Better find that or look for it as a condition.
 
 int factorial(int num);
+//vector<int> parseDigits(int num);
 
 int main() {
-  cout << factorial(6) << endl;
-  cout << factorial(10) << endl;
-  cout << factorial(3) << endl;
+  cout << factorial(1) << endl;
+  cout << factorial(4) << endl;
+  cout << factorial(2) << endl;
+  cout << factorial(1)+factorial(4)+factorial(2) <<endl;
 }
 
 int factorial(int num) {
@@ -30,3 +33,10 @@ int factorial(int num) {
   }
   return result;
 }
+
+/*vector<int> parseDigits(int num) {
+  //takes a number and returns a vector of its digits.  Very possible to solve the problem without
+  //this, but its a useful way to break up this problem even further (and give me vector practice)
+  vector<int> v = new vector<int>;
+  return v;
+}*/
