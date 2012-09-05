@@ -20,6 +20,21 @@ int main() {
   cout << factorial(4) << endl;
   cout << factorial(2) << endl;
   cout << factorial(1)+factorial(4)+factorial(2) <<endl;
+  int i = 3;
+  bool foundResult = false;
+  while(!foundResult) {
+    int holder = i;
+    int sum = 0;
+    while(holder!=0) {
+      int digit = holder%10;
+      sum = sum + factorial(digit);
+      holder = holder/10;
+    }
+    if(sum==i) {
+      cout << sum << " " << i << endl;
+    }
+    i++; 
+  }
 }
 
 int factorial(int num) {
