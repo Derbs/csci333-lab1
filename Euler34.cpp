@@ -14,5 +14,19 @@ using std::endl;
 int factorial(int num);
 
 int main() {
-    
+  cout << factorial(6) << endl;
+  cout << factorial(10) << endl;
+  cout << factorial(3) << endl;
+}
+
+int factorial(int num) {
+  //takes a POSITIVE number and returns the factorial of that number.
+  if(num <=0) {
+    return 0;
+  }
+  int result = num;
+  for(int i = num-1; i>0; --i) {
+    result = result * i;
+  }
+  return result;
 }
