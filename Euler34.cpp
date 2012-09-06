@@ -16,10 +16,7 @@ int factorial(int num);
 //vector<int> parseDigits(int num);
 
 int main() {
-  cout << factorial(1) << endl;
-  cout << factorial(4) << endl;
-  cout << factorial(2) << endl;
-  cout << factorial(1)+factorial(4)+factorial(2) <<endl;
+  cout << factorial(9)<<endl;
   int i = 3;
   bool foundResult = false;
   while(!foundResult) {
